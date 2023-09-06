@@ -22,7 +22,7 @@ class Etudiant: public Personne
         void Setestadmis(bool val) { note = val; }
 
         //Methode virtuelle/polymorphe
-        virtual void infos();
+        virtual void infos() override;
 
     protected:
 

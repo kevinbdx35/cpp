@@ -22,7 +22,7 @@ class Employe: public Personne
         void Setsalaire_annuel(float val) { salaire = val; }
 
         //Methode virtuelle/polymorphe
-        virtual void infos();
+        virtual void infos() override;
 
     protected:
 
