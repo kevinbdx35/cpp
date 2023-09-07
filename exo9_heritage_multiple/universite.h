@@ -21,14 +21,12 @@ class Universite
         string GetNom() { return nom; }
         void SetNom(string val) { nom = val; }
 
-        Personne *GetPersonne() { return personne; }
-        void SetPersonne(Personne *val) { personne = val;}
 
         //Méthode pour obtenir l'effectif
         int effectif() { return effectifs; }
 
         //Méthode pour ajouter une personne
-        void ajouter(Personne *personne);
+        void ajouter(Personne *);
 
 
         // Méthode pour afficher les informations de l'université
