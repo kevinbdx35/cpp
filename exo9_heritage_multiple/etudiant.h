@@ -21,8 +21,8 @@ class Etudiant: virtual public Personne
         bool Getestadmis() { return note >= 10; }
         void Setestadmis(bool val) { note = val; }
 
-        static double Getremboursement_soins() { return valRemboursement; }
-        static void Setremboursement_soins(double val) { valRemboursement = val; }
+        double Getremboursement_soins() { return valRemboursement; }
+        void Setremboursement_soins(double val) { valRemboursement = val; }
 
         //Methode virtuelle/polymorphe
         virtual void infos() override;

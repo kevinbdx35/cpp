@@ -11,13 +11,8 @@ class ChargeTD: virtual public Etudiant, virtual public Employe
 {
     public:
         //Imposer l'utilsiation d'un élément de façon implicite
-        using Etudiant::Getnom;
-        using Etudiant::Getprenom;
-        using Etudiant::Getage;
         using Employe::Getremboursement_soins;
-        using Etudiant::infos;
-        using Employe::infos;
-        using Personne::infos;
+
 
 
         //Constructeur

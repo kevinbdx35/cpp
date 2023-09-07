@@ -22,8 +22,8 @@ class Employe: virtual public Personne
         void Setsalaire_annuel(float val) { salaire = val; }
 
         //Methodes de classe
-        static double Getremboursement_soins() { return valRemboursement; }
-        static void Setremboursement_soins(double val) { valRemboursement = val; }
+        double Getremboursement_soins() { return valRemboursement; }
+        void Setremboursement_soins(double val) { valRemboursement = val; }
 
         //Methode virtuelle/polymorphe
         virtual void infos() override;
