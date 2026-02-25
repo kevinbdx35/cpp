@@ -17,8 +17,6 @@ int main()
     Eleve classe[nbEleves];
 
     double total_notes = 0;
-    double note_min = classe[0].note;
-    double note_max = classe[0].note;
 
 
     //Pour chaque élève récupération des informations
@@ -57,10 +55,13 @@ int main()
         }
     }
 
+    double note_min = classe[0].note;
+    double note_max = classe[0].note;
+
     //Affichage des informations pour chaque éléve
     for(int i = 0; i < nbEleves; i++)
     {
-        total_notes = classe[i].note + 1;
+        total_notes += classe[i].note;
         note_min = min(note_min, classe[i].note);
         note_max = max(note_max, classe[i].note);
 
